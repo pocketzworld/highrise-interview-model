@@ -1,0 +1,8 @@
+namespace rs.high.life.fbs;
+
+table VWChatEvent {
+  senderId:string (required);
+  sendername:string (required);
+  message:string (required);
+}
+root_type VWChatEvent;

@@ -1,0 +1,8 @@
+namespace rs.high.life.fbs;
+
+table ConnectRoomRequest {
+  roomId:string (required);
+  userId:string (required);
+  username:string (required);
+}
+root_type ConnectRoomRequest;

@@ -1,0 +1,10 @@
+include "character/Avatar.fbs";
+
+namespace rs.high.life.fbs;
+
+table AvatarJoinedEvent {
+  avatar:Avatar (required);
+}
+root_type AvatarJoinedEvent;
+
+

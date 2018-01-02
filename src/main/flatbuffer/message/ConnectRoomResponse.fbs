@@ -1,0 +1,6 @@
+namespace rs.high.life.fbs;
+
+table ConnectRoomResponse {
+  roomId:string (required);
+}
+root_type ConnectRoomResponse;

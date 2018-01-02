@@ -1,0 +1,13 @@
+include "message/ConnectRoomResponse.fbs";
+include "message/AvatarJoinedEvent.fbs";
+include "message/AvatarLeftEvent.fbs";
+include "message/VWChatEvent.fbs";
+
+namespace rs.high.life.fbs;
+
+union AnyServerContent { ConnectRoomResponse, AvatarJoinedEvent, AvatarLeftEvent, VWChatEvent }
+
+table ServerMessage {
+  content:AnyServerContent (required);
+}
+root_type ServerMessage;

@@ -1,0 +1,6 @@
+namespace rs.high.life.fbs;
+
+table AvatarLeftEvent {
+  userId:string (required);
+}
+root_type AvatarLeftEvent;

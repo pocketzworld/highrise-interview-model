@@ -1,0 +1,7 @@
+//placeholder table in root directory of fbs
+namespace rs.high.life.fbs;
+
+table HRRoot {
+
+}
+root_type HRRoot;

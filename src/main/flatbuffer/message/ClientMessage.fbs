@@ -1,0 +1,11 @@
+include "message/ConnectRoomRequest.fbs";
+include "message/VWChatEvent.fbs";
+
+namespace rs.high.life.fbs;
+
+union AnyClientContent { ConnectRoomRequest, VWChatEvent }
+
+table ClientMessage {
+  content:AnyClientContent (required);
+}
+root_type ClientMessage;

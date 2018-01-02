@@ -1,0 +1,7 @@
+namespace rs.high.life.fbs;
+
+table Avatar {
+  userId:string (required);
+  username:string (required);
+}
+root_type Avatar;
