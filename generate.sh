@@ -70,6 +70,7 @@ TARGET_LANGUAGE=$1
 if [[ "${TARGET_LANGUAGE}" == "all" || $# -eq 0 ]]; then
     compile_flatbuffers "java"
     compile_flatbuffers "cpp"
+    compile_flatbuffers "python"
 elif [ "${TARGET_LANGUAGE}" == "help" ]; then 
     show_usage
     exit 0
